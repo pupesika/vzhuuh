@@ -88,11 +88,13 @@ cursor: url('../images/kist.svg'), auto;
 #starimg1, #starimg2{
   object-fit: cover;
   width: 10vw;
+  height: 10vw;
 }
 
 #starimg3{
   object-fit: cover;
   width: 5vw;
+  height: 5vw;
 }
 
 .secondScreen{
