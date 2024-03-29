@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>vzhuh</title>
+</head>
+<body>
+    <img id="cursor" class="custovcoursour" src="kist_1.svg" alt="">
+    <section class="header">
+        <div class="block1"><div class="text1"><img src="images/hello.svg" alt="" id="textimg"></div>
+        <div class="hand"><img src="images/hand.svg" alt="" id="handimg"></div></div>
+        <div class="star1"><img src="images/Star 3.svg" alt="" id="starimg1"></div>
+        <div class="star2"><img src="images/Star 1.svg" alt="" id="starimg2"></div>
+        <div class="star3"><img src="images/Star 2.svg" alt="" id="starimg3"></div>
+    </section>
+
+    <section class="secondScreen">
+        <div class="textsecond1" id="text">яркий взгляд</div> <div class="textsecond2" id="text2">сочный поцелуй</div> 
+        <div class="textsecond3" id="text3">игривые брови</div>
+        <div class="textsecond4" id="text4">роскошная прическа</div>
+        <div class="star7"><img src="images/Star 7.svg" alt="" id="starimg7"></div>
+        <div class="star22"><img src="images/Star 22.svg" alt="" id="starimg22"></div>
+        <div class="star24"><img src="images/Star 24.svg" alt="" id="starimg24"></div>
+        <div class="star21"><img src="images/Star 21.svg" alt="" id="starimg21"></div>
+
+        <div class="lips1"><img src="images/lips_1.svg" id="lipsimg" alt="" style="width: 35vw; z-index: 2;"></div>
+        <div class="eye1"><img src="images/eye.svg" id="eyeimg" style="width: 35vw;"></div>
+        <div class="brow1"><img src="images/brow_1.svg" id="browimg" alt="" style="width: 35vw; z-index: 2;"></div>
+        <div class="hair1"><img src="images/hair_1.svg"  id="hairimg" alt="" style="width: 110vw; position: absolute;"></div>
+        <div class="imagesSecond"><div class="maz1"><img src="images/maz_1.svg" alt="" style="width: 75vw; margin-left: 25vw;"></div>
+        <div class="maz2"><img src="images/maz_2.svg" alt="" style="width: 160vw; margin-left: 45vw;"></div></div>
+    </section>
+
+    <section class="thirdScreen">
+        <center><div class="textThird">ТЫ ГОТОВА <br> ПОКОРЯТЬ <br> ЭТОТ МИР!</div></center>
+        <div class="star25"><img src="images/Star 25.svg" alt="" id="starimg25"></div>
+        <div class="star26"><img src="images/Star 26.svg" alt="" id="starimg26"></div>
+        <div class="star27"><img src="images/Star 27.svg" alt="" id="starimg27"></div>
+    </section>
+
+    <section class="footer">
+        <div class="blockLast"><div class="lastText">Васильченко Вероника <br> Б23ДЗ10 <br> Ярослав Субботин</div>
+        <div class="logo"><img src="images/logo.svg" alt="" style="width: 25vw; padding-left: 12vw;"></div></div>
+    </section>
+</body>
+
+<script>
+
+    //Сменаизображений руки
+    document.addEventListener('DOMContentLoaded', function() {
+        let handBlock = document.getElementById('handimg');
+        var imageshand = ['./images/hand.svg', './images/hand_2.svg', './images/hand_3.svg', './images/hand_4.svg'];
+        let i = 0;
+        handBlock.addEventListener('click', function() {
+        i=(i+1)%imageshand.length;
+        handBlock.src = imageshand[i];
+  });
+
+  document.addEventListener('DOMContentLoaded', function() {
+      let customCursor = document.getElementById('custom-cursor');
+      document.addEventListener('mousemove', function(event) {
+          customCursor.style.left = (event.clientX + window.scrollX) + 'px';
+          customCursor.style.top = (event.clientY + window.scrollY) + 'px';
+      });
+
+      customCursor.style.display = 'block';
+  });
+        
+    });
+
+      document.addEventListener('DOMContentLoaded', function() {
+        let eyeBlock = document.getElementById('eyeimg');
+        var imageseye = ['./images/eye.svg', './images/eye_1.svg', './images/eye_2.svg', './images/eye_3.svg', './images/eye_4.svg'];
+        let k = 0;
+        eyeBlock.addEventListener('click', function() {
+        k=(k+1)%imageseye.length;
+        eyeBlock.src = imageseye[k];
+      });});
+
+      document.addEventListener('DOMContentLoaded', function() {
+        let lipsBlock = document.getElementById('lipsimg');
+        var imageslips = ['./images/lips_1.svg', './images/lips_2.svg', './images/lips_3.svg', './images/lips_4.svg'];
+        let l = 0;
+        lipsBlock.addEventListener('click', function() {
+        l=(l+1)%imageslips.length;
+        lipsBlock.src = imageslips[l];
+
+      });});
+
+    document.addEventListener('DOMContentLoaded', function() {
+        let browBlock = document.getElementById('browimg');
+        var imagesbrow = ['./images/brow_1.svg', './images/brow_2.svg', './images/brow_3.svg', './images/brow_4.svg', './images/brow_5.svg'];
+        let n = 0;
+        browBlock.addEventListener('click', function() {
+        n=(n+1)%imagesbrow.length;
+        browBlock.src = imagesbrow[n];
+      });});
+
+      document.addEventListener('DOMContentLoaded', function() {
+        let hairBlock = document.getElementById('hairimg');
+        var imageshair = ['./images/hair_1.svg', './images/hair_2.svg', './images/hair_3.svg', './images/hair_4.svg'];
+        let m = 0;
+        hairBlock.addEventListener('click', function() {
+        m=(m+1)%imageshair.length;
+        hairBlock.src = imageshair[m];
+      });});
+
+
+    // Здесь прокручивается рука
+    let hand = document.getElementById('handimg');
+    hand.addEventListener('mouseenter', function() {
+    hand.style.transform='rotate(2deg)';         });
+    hand.addEventListener('mouseleave', function() {
+    hand.style.transform='rotate(0deg)';});
+
+    // Здесь анимация каждого текста увеличние ширины
+    const textElement = document.getElementById('text');
+    setInterval(function() {
+    const currentFontWeight = window.getComputedStyle(textElement).getPropertyValue('font-weight');
+    if (currentFontWeight === '300') {
+        textElement.style.fontWeight = '800'; 
+    } else {
+        textElement.style.fontWeight = '300'; 
+    }
+}, 1000);
+
+    const textElement2 = document.getElementById('text2');
+    setInterval(function() {
+    const currentFontWeight = window.getComputedStyle(textElement).getPropertyValue('font-weight');
+    if (currentFontWeight === '300') {
+        textElement2.style.fontWeight = '800'; 
+    } else {
+        textElement2.style.fontWeight = '300'; 
+    }
+}, 1000);
+
+    const textElement3 = document.getElementById('text3');
+    setInterval(function() {
+    const currentFontWeight = window.getComputedStyle(textElement).getPropertyValue('font-weight');
+    if (currentFontWeight === '300') {
+        textElement3.style.fontWeight = '800'; 
+    } else {
+        textElement3.style.fontWeight = '300'; 
+    }
+}, 1000);
+
+    const textElement4 = document.getElementById('text4');
+    setInterval(function() {
+    const currentFontWeight = window.getComputedStyle(textElement).getPropertyValue('font-weight');
+    if (currentFontWeight === '300') {
+        textElement4.style.fontWeight = '800'; 
+    } else {
+        textElement4.style.fontWeight = '300'; 
+    }
+}, 1000);
+</script>
+</html>

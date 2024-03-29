@@ -1,0 +1,261 @@
+body{
+  background-color: #1D192D;
+}
+
+.hand{
+cursor: url('../images/kist.svg'), auto;
+}
+.lips1 {
+  cursor: url('../images/pomada.svg'), auto;
+}
+.brow1 {
+  cursor: url('../images/kist_3.svg'), auto;
+}
+.eye1 {
+    cursor: url('../images/kist_2.svg'), auto;
+}
+.hair1 {
+    cursor: url('../images/ras.svg'), auto;
+}
+
+.header{
+  position: relative;
+  display: block;
+  height: 50vw;
+}
+
+.block1{
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  gap: 2vw;
+}
+
+#textimg{
+  width: 50vw;
+  height: auto;
+  margin-left: 13vw;
+  margin-top: -1vw;
+}
+
+.hand{
+  transition: transform 5s ease-in-out;
+}
+
+#handimg{
+  width: 70vw;
+  height: auto;
+  margin-left: -44vw;
+}
+
+.star1{
+  position: absolute;
+  margin-top: 4vw;
+  margin-left: 10vw;
+  animation: rotate 11s linear infinite;
+}
+
+.star2{
+  position: absolute;
+  margin-top: 5vw;
+  margin-left: 67vw;
+  animation: rotate 11s linear infinite;
+}
+
+.star3{
+  position: absolute;
+  margin-top: 30vw;
+  margin-left: 85vw;
+  animation: rotate 11s linear infinite;
+}
+
+@keyframes rotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); } 
+}
+
+#starimg1, #starimg2{
+  width: 10vw;
+}
+
+#starimg3{
+  width: 5vw;
+}
+
+.secondScreen{
+  position: relative;
+  overflow-x: hidden;
+  margin-bottom: -40vw;
+  height: 250vw;
+}
+
+.textsecond1, .textsecond2, .textsecond3, .textsecond4{
+  font-family: 'Factor A';
+  font-size: 3.4vw;
+  font-style: light;
+  color: #CFE8FF;
+  position: absolute;
+}
+
+.imagesSecond{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.textsecond1{
+  position: absolute;
+  margin-top: -2w;
+  margin-left: 70vw;
+}
+
+.textsecond2{
+  position: absolute;
+  margin-top: 33vw;
+  margin-left: 6vw;
+}
+
+.textsecond3{
+  position: absolute;
+  margin-top: 73vw;
+  margin-left: 25vw;
+}
+
+.textsecond4{
+  position: absolute;
+  margin-top: 140vw;
+  margin-left: 9vw;
+}
+
+.hair1{
+  position: absolute;
+  margin-top: 115vw;
+}
+
+.lips1{
+  position: absolute;
+  margin-top: 30.5vw;
+  margin-left: 15vw;
+}
+
+.eye1{
+  position: absolute;
+  margin-top: 1.5vw;
+  margin-left: 27vw;
+}
+
+.brow1{
+  position: absolute;
+  margin-top: 81vw;
+  margin-left: 58vw;
+}
+
+.maz2{
+  position: relative;
+  z-index: -1;
+  margin-top: -77vw;
+}
+
+.star7{
+  position: absolute;
+  margin-top: 50vw;
+  margin-left: 78vw;
+  animation: rotate 15s linear infinite;
+}
+
+.star22{
+  position: absolute;
+  margin-top: 125vw;
+  margin-left: 9vw;
+  animation: rotate 20s linear infinite;
+}
+
+.star21{
+  position: absolute;
+  margin-top: 133vw;
+  margin-left: 45vw;
+  animation: rotate 10s linear infinite;
+}
+
+.star24{
+  position: absolute;
+  margin-top: 107vw;
+  margin-left: 80vw;
+  animation: rotate 8s linear infinite;
+}
+
+#starimg7, #starimg22{
+  width: 10vw;
+}
+
+#starimg24, #starimg21{
+  width: 5vw;
+}
+
+.thirdScreen{
+  display: block;
+  position: relative;
+}
+
+.textThird{
+  font-size: 10.7vw;
+  font-family: 'Factor A';
+  color: #CFE8FF;
+  font-weight: 800;
+  font-style: bold;
+  margin: 0 auto;
+}
+
+#starimg27{
+  width: 10vw;
+}
+
+#starimg25, #starimg26{
+  width: 5vw;
+}
+
+.star25{
+  position: absolute;
+  margin-top: -19vw;
+  margin-left: 7vw;
+  animation: rotate 4s linear infinite;
+}
+
+.star26{
+  position: absolute;
+  margin-top: -2vw;
+  margin-left: 84vw;
+  animation: rotate 11s linear infinite;
+}
+
+.star27{
+  position: absolute;
+  margin-top: -41vw;
+  margin-left: 82vw;
+  animation: rotate 31s linear infinite;
+}
+
+.footer{
+  margin-top: 8vw;
+  position: relative;
+}
+
+.blockLast{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.lastText{
+  font-family: 'Factor A';
+  font-size: 3vw;
+  font-style: light;
+  color: #CFE8FF;
+  padding-left: 3vw;
+}
+
+.logo{
+  background: linear-gradient(to right, #1D192D, #FF78C0);
+  width: 40vw;
+  
+}
