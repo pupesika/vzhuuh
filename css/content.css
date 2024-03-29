@@ -140,8 +140,9 @@ cursor: url('../images/kist.svg'), auto;
 
 .hair1{
   position: absolute;
-  margin-top: 61vw;
+  margin-top: 70vw;
   margin-left: -22vw;
+  margin-bottom: -5vw;
 }
 
 .lips1{
