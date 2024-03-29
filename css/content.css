@@ -26,26 +26,37 @@ cursor: url('../images/kist.svg'), auto;
 
 .block1{
   position: absolute;
-  display: flex;
-  flex-direction: row;
   gap: 2vw;
 }
 
 #textimg{
   width: 50vw;
   height: auto;
-  margin-left: 13vw;
+  margin-left: 11vw;
   margin-top: -1vw;
 }
 
 .hand{
-  transition: transform 5s ease-in-out;
+  animation: handAnimation 5s infinite;
+  position: absolute;
+  margin-top: -59vw;
+  margin-left: 25vw;
+}
+
+@keyframes handAnimation {
+  0%{
+    rotate: 0deg;
+  }
+  50%{
+    rotate: 20deg;
+  }
+  99%{
+    rotate: 0deg;
+  }
 }
 
 #handimg{
-  width: 70vw;
-  height: auto;
-  margin-left: -44vw;
+  width: 80vw;
 }
 
 .star1{
@@ -85,7 +96,7 @@ cursor: url('../images/kist.svg'), auto;
 .secondScreen{
   position: relative;
   overflow-x: hidden;
-  margin-bottom: -40vw;
+  margin-bottom: -35vw;
   height: 250vw;
 }
 
@@ -129,12 +140,12 @@ cursor: url('../images/kist.svg'), auto;
 
 .hair1{
   position: absolute;
-  margin-top: 115vw;
+  margin-top: 107vw;
 }
 
 .lips1{
   position: absolute;
-  margin-top: 30.5vw;
+  margin-top: 35vw;
   margin-left: 15vw;
 }
 
@@ -146,7 +157,7 @@ cursor: url('../images/kist.svg'), auto;
 
 .brow1{
   position: absolute;
-  margin-top: 81vw;
+  margin-top: 79vw;
   margin-left: 58vw;
 }
 
